@@ -1,0 +1,25 @@
+<template>
+    <div class="slds-m-top_medium slds-m-bottom_x-large" >
+               <!-- Simple -->
+        <div class=" lgc-bg slds-scrollable" style="height: 650px">
+            <ul class="slds-has-dividers_bottom-space">
+                <template for:each={tracks} for:item="track">
+                <li key={track.id} class="slds-item">
+                    <lightning-tile>
+                        <lightning-layout>
+                        <lightning-layout-item class="slds-align-middle">
+                            <lightning-button-icon id={track.id} variant="brand" icon-name="utility:play" onclick={handlePlayRow}></lightning-button-icon>
+                        </lightning-layout-item>
+                       <lightning-layout-item class="slds-p-left--small slds-align-middle">
+                           <span class="slds-text-heading--small"> {track.title} </span>
+                           <br/>
+                           <span class="slds-text-body--regular"> {track.content} </span>
+                       </lightning-layout-item>
+                        </lightning-layout>
+                    </lightning-tile>
+                </li>
+                </template>
+            </ul>
+        </div>
+    </div>
+</template>
