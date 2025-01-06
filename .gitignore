@@ -8,7 +8,7 @@ logs
 /lib
 
 # Standard dist folder
-/dist
+/build
 
 # Tooling files
 node_modules

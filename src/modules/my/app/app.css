@@ -1,38 +1,27 @@
-.center {
-    text-align: center;
+:host {
+    --sds-c-card-color-background: #000000;
+
+
 }
-.link {
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    background-color: #ff6000;
-    color: white;
-    margin-left: 33%;
-    margin-right: 33%;
-    display: inline-block;
-    margin-top: 1em;
+.navIcon{
+    --sds-c-icon-color-foreground-default: #ffffff;
+
 }
-.info {
-    color: black;
-    background-color: #e4f2f8;
-    margin: auto;
-    padding: 15px 10px;
-    text-align: left;
-    width: 300px;
-    border-radius: 5px;
+.cardtitle{
+    color: #ffffff;
+
 }
-.code {
-    font-family: monospace;
-}
-.container {
-    margin-top: 30px;
+.mainCard{
+    height: 100vh;
+    background-color: #0c0c0c;
 }
 
-img {
-    max-width: 150px;
+.playerCont {
+    background-color: #0c0c0c;
+    width: 100%;
+}
+a {
+    color: #B30606;
 }
 
-.greeting {
-    height: 75px;
-}
+

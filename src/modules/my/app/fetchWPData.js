@@ -1,19 +1,26 @@
 import axios from 'axios';
 
-
-const recordMetadata = {
-    name: 'name',
-    email: 'email',
-    website: 'url',
-    amount: 'currency',
-    phone: 'phoneNumber',
-    closeAt: 'dateInFuture',
-};
-
-export default function fetchWPData({ amountOfRecords }) {
+let one = "https://creativeboxstudio.com/wp-json/cb/v1/music_assets"
 
 
 
-    return axios.get('http://13.56.149.186/wp-json/cb/v1/music_assets')
-        .then ((res) => res.data);
+
+
+
+
+export default function fetchWPData(searchKey) {
+
+    if(searchKey != null){
+       var tracks = axios.get(one+'?search='+searchKey);
+    }
+    else {
+        var tracks = axios.get(one);
+
+        }
+
+
+
+    return axios.all([tracks]);
 }
+
+

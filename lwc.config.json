@@ -8,6 +8,9 @@
         },
         {
             "npm" : "axios"
+        },
+        {
+            "npm" : "waves-audio"
         }
     ]
 }

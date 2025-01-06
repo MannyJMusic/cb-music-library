@@ -1,0 +1,12 @@
+.player{
+    width: 100% !important;
+    background-color: #ffffff;
+}
+.container{
+    width: 100% !important;
+}
+.trackInfo {
+   background-color: #fdcece;
+    border-color: #ab0707;
+    color:#B30606;
+}
